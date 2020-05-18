@@ -1,0 +1,1 @@
+All the audio samples presented here are originally taken from the VoxForge Speech English corpus. (http://www.voxforge.org/home/downloads)
