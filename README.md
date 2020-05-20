@@ -1,13 +1,15 @@
 
 # MP3 Compression as a Means to Improve Robustness against Adversarial Noise Targeting Attention-based End-to-End Speech Recognition
 
-**Motivation**
+**Motivation & goal**
 
-Adversarial Examples represent an imminent security threat to any Machine Learning system. The present thesis addresses this issue by proposing MP3-compression as a potential measure to reduce the susceptibility of Automatic Speech Recognition (ASR) systems to be mislead by Audio Adversarial Examples (AAEs).
+Adversarial Examples represent an imminent security threat to any Machine Learning system. In particular, Automatic Speech
+Recognition (ASR) systems can be hacked into recognizing hidden voice commands delivered on purpose by a malicious external agent. In technical vocabulary, these are termed audio adversarial examples - they represent voice commands seemingly innocuous to a human listener, but which carry along a hidden message that can be decoded accordingly by the ASR system, and even passed on to a vocally-triggered execution system. The present thesis addresses this issue by proposing MP3-compression as a potential measure to reduce the susceptibility of Automatic Speech Recognition (ASR) systems to be mislead by Audio Adversarial Examples (AAEs).
 
 **Methodology**
 
-In essence, we used the Fast Gradient Sign Method (FGSM) to generate untargeted AAEs in the form of adversarial noise added to original speech samples. We used a feature inversion procedure to convert the adversarial examples from the feature into the audio domain. Different from prior work, we targeted an end-to-end, fully neural ASR system (namely ESPnet) featuring a hybrid decoder enhanced with both Connectionist Temporal Classification (CTC) and Attention mechanisms. 
+In essence, we used the Fast Gradient Sign Method (FGSM) to generate untargeted AAEs in the form of adversarial noise added to original speech samples. We used a feature inversion procedure to convert the adversarial examples from the feature into the audio domain. Different from prior work, we targeted an end-to-end, fully neural ASR system (namely ESPnet) featuring a hybrid decoder enhanced with both Connectionist Temporal Classification (CTC) and Attention mechanisms. Notably, this work did not focus on over-the-air, realtime attacks, but rather on direct attacks, in which adversarial samples were digitally
+presented at the system’s input.
 
 **Results**
 
