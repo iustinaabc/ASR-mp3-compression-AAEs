@@ -21,4 +21,4 @@ In essence, we used the Fast Gradient Sign Method (FGSM) to generate untargeted 
 
 Final [presentation](/FINAL_presentation_G-Drive_18.05.2020.pdf).
 
-Experimental results can be found in `ASR_results.xlsx`
+Complete experimental results can be found in `ASR_results.xlsx`
