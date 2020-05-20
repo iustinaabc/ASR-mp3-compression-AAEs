@@ -1,7 +1,7 @@
 
 # MP3 Compression as a Means to Improve Robustness against Adversarial Noise Targeting Attention-based End-to-End Speech Recognition
 
-This work was performed as a Master's Thesis, which represented the last milestone for completing the Master’s Degree in Neuroengineering at the Technical University of Munich (TUM). It was conducted within the Department of Electrical and Computer Engineering, under the supervision of Univ.-Prof. Dr.-Ing. Bernhard U. Seeber (Chair of Audio Information Processing) and Dipl.-Ing.(Univ.) Ludwig K¨urzinger (Chair of Human-Machine Communication).
+This work was performed as a Master's Thesis, which represented the last milestone for completing the Master’s Degree in Neuroengineering at the Technical University of Munich (TUM). It was conducted within the Department of Electrical and Computer Engineering, under the supervision of Univ.-Prof. Dr.-Ing. Bernhard U. Seeber (Chair of Audio Information Processing) and Dipl.-Ing.(Univ.) Ludwig Kürzinger (Chair of Human-Machine Communication).
 
 **Motivation & goal**
 
