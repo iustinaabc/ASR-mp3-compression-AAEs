@@ -4,7 +4,10 @@
 ### TL;DR
 This work explored MP3 compression as a countermeasure to Audio Adversarial Examples (AAEs)- the hostile inputs that trick Automatic Speech Recognition (ASR) systems into recognizing hidden commands, while human users remain oblivious to their presence. The malicious character of these inputs is usually given by a specially crafted noise (__Adversarial Noise__) that is added to regular audio inputs.
 
-We generated AAEs with the __Fast Gradient Sign Method (FGSM__ for an end-to-end, hybrid CTC-attention ASR system. We then performed decoding experiments with both uncompressed and MP3-compressed AAEs, and validated the presence of Adversarial Noise with two objective indicators:(1) Character Error Rates (CER) that measure the speech decoding performance of four ASR models trained on uncompressed, as well as MP3-compressed data sets and (2) Signal-to-Noise Ratio (SNR) estimated for both uncompressed and MP3-compressed AAEs that are reconstructed in the time domain by feature inversion. 
+![Poster](/ASR_real-life_attack_with_TV.jpg)
+__Adapted from Schönherr et al. 2019__
+
+To prevent this kind of attack, we implemented the following pipeline: we generated AAEs with the __Fast Gradient Sign Method (FGSM__ for an end-to-end, hybrid CTC-attention ASR system. We then performed decoding experiments with both uncompressed and MP3-compressed AAEs, and validated the presence of Adversarial Noise with two objective indicators: (1) Character Error Rates (CER) that measure the speech decoding performance of four ASR models trained on uncompressed, as well as MP3-compressed data sets and (2) Signal-to-Noise Ratio (SNR) estimated for both uncompressed and MP3-compressed AAEs that are reconstructed in the time domain by feature inversion. 
 
 ### Spoilers
 * You might first want to indulge your ears in these delightful [adversarial audio samples](/audio_samples). We give away free (German!) beers to those who can recognize the hidden phrases. 
