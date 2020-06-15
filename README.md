@@ -2,12 +2,12 @@
 # MP3 Compression To Diminish Adversarial Noise in End-to-End Speech Recognition
 
 ### TL;DR
-This work explored MP3 compression as a countermeasure to Audio Adversarial Examples (AAEs)- the hostile inputs that trick Automatic Speech Recognition (ASR) systems into recognizing hidden commands, while human users remain oblivious to their presence. The malicious character of these inputs is usually given by a specially crafted noise (__Adversarial Noise__) that is added to regular audio inputs.
+This work explored MP3 compression as a countermeasure to Audio _Adversarial Examples (AAEs)_- the hostile inputs that trick Automatic Speech Recognition (ASR) systems into recognizing hidden commands, while human users remain oblivious to their presence. The malicious character of these inputs is usually given by a specially crafted noise (_Adversarial Noise_) that is added to regular audio inputs.
 
-![Poster](/ASR_real-life_attack_with_TV.jpg)
-__Adapted from Sch�nherr et al. 2019__
+![Real_attack](/ASR_real-life_attack_with_TV.jpg =100x50)<br>
+_Adapted from Sch�nherr et al. 2019_
 
-To prevent this kind of attack, we implemented the following pipeline: we generated AAEs with the __Fast Gradient Sign Method (FGSM__ for an end-to-end, hybrid CTC-attention ASR system. We then performed decoding experiments with both uncompressed and MP3-compressed AAEs, and validated the presence of Adversarial Noise with two objective indicators: (1) Character Error Rates (CER) that measure the speech decoding performance of four ASR models trained on uncompressed, as well as MP3-compressed data sets and (2) Signal-to-Noise Ratio (SNR) estimated for both uncompressed and MP3-compressed AAEs that are reconstructed in the time domain by feature inversion. 
+To prevent this kind of attack, we implemented the following pipeline: we generated AAEs with the _Fast Gradient Sign Method (FGSM)_ for an end-to-end, hybrid CTC-attention ASR system. We then performed decoding experiments with both uncompressed and MP3-compressed AAEs, and validated the presence of Adversarial Noise with two objective indicators: (1) Character Error Rates (CER) that measure the speech decoding performance of four ASR models trained on uncompressed, as well as MP3-compressed data sets and (2) Signal-to-Noise Ratio (SNR) estimated for both uncompressed and MP3-compressed AAEs that are reconstructed in the time domain by feature inversion. 
 
 ### Spoilers
 * You might first want to indulge your ears in these delightful [adversarial audio samples](/audio_samples). We give away free (German!) beers to those who can recognize the hidden phrases. 
@@ -17,7 +17,7 @@ To prevent this kind of attack, we implemented the following pipeline: we genera
 
 ### Detailed description
 
-This work was performed as a Master's Thesis, which represented the last milestone for completing the Master’s Degree in Neuroengineering at the Technical University of Munich (TUM). It was conducted within the Department of Electrical and Computer Engineering, under the supervision of Univ.-Prof. Dr.-Ing. Bernhard U. Seeber (Chair of Audio Information Processing) and Dipl.-Ing.(Univ.) Ludwig Kürzinger (Chair of Human-Machine Communication). The work has only been submitted for publication to [__SPECOM 2020 Conference__](http://www.specom.nw.ru/2020/) and is currently under review.
+This work was performed as a Master's Thesis, which represented the last milestone for completing the Master’s Degree in Neuroengineering at the Technical University of Munich (TUM). It was conducted within the Department of Electrical and Computer Engineering, under the supervision of Univ.-Prof. Dr.-Ing. Bernhard U. Seeber (Chair of Audio Information Processing) and Dipl.-Ing.(Univ.) Ludwig Kürzinger (Chair of Human-Machine Communication). The work has only been submitted for publication to [_SPECOM 2020 Conference_](http://www.specom.nw.ru/2020/) and is currently under review.
 
 **Motivation & goal**
 
