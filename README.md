@@ -4,7 +4,7 @@
 ## TL;DR
 This work explored MP3 compression as a countermeasure to Audio _Adversarial Examples (AAEs)_- the hostile inputs that trick Automatic Speech Recognition (ASR) systems into recognizing hidden commands, while human users remain oblivious to their presence. The malicious character of these inputs is usually given by a specially crafted noise (_Adversarial Noise_) that is added to regular audio inputs.
 
-<img src="/ASR_real-life_attack_with_TV.jpg" alt="ASR_attack" width="200px" height="100px">
+<img src="/ASR_real-life_attack_with_TV.jpg" alt="ASR_attack" width="500px" height="350px">
 
 ![](/ASR_real-life_attack_with_TV.jpg){:height="700px" width="400px"}<br>
 _(Adapted from Schönherr et al. 2019)_
