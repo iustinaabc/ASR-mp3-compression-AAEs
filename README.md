@@ -8,8 +8,8 @@ This work explored __MP3 compression__ as a countermeasure to _Audio Adversarial
   (Adapted from Schönherr et al. 2019)
 </p>
 
-To prevent this kind of attack, we implemented the following pipeline: we generated AAEs with the _Fast Gradient Sign Method (FGSM)_ for an end-to-end, hybrid CTC-attention ASR system. We then performed decoding experiments with both uncompressed and MP3-compressed AAEs, and validated the presence of Adversarial Noise with two objective indicators:
-(1) Character Error Rates (CER) that measure the speech decoding performance of four ASR models trained on uncompressed, as well as MP3-compressed data sets and 
+To prevent this kind of attack, we implemented the following pipeline: we generated AAEs with the _Fast Gradient Sign Method (FGSM)_ for an end-to-end, hybrid CTC-attention ASR system. We then performed decoding experiments with both uncompressed and MP3-compressed AAEs, and validated the presence of Adversarial Noise with two objective indicators: <br>
+(1) Character Error Rates (CER) that measure the speech decoding performance of four ASR models trained on uncompressed, as well as MP3-compressed data sets;<br>
 (2) Signal-to-Noise Ratio (SNR) estimated for both uncompressed and MP3-compressed AAEs that are reconstructed in the time domain by feature inversion. 
 
 ## Spoilers
