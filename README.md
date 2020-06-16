@@ -2,7 +2,7 @@
 # MP3 Compression To Diminish Adversarial Noise in End-to-End Speech Recognition
 
 ## TL;DR
-This work explored __MP3 compression__ as a countermeasure to _Audio Adversarial Examples (AAEs)_- the hostile inputs that trick Automatic Speech Recognition (ASR) systems into recognizing hidden commands, while human users remain oblivious to their presence. The malicious character of these inputs is usually given by a specially crafted noise (_Adversarial Noise_) that is added to regular audio inputs.
+This work explored __MP3 compression__ as a countermeasure to _Audio Adversarial Examples (AAEs)_ - the hostile inputs that trick Automatic Speech Recognition (ASR) systems into recognizing hidden commands, while human users remain oblivious to their presence. The malicious character of these inputs is usually given by a specially crafted noise (_Adversarial Noise_) that is added to regular audio inputs.
 <p align="center">
   <img src="/ASR_real-life_attack_with_TV.jpg" alt="ASR_attack" width="500px" height="250px"><br>
   (Adapted from Schönherr et al. 2019)
@@ -20,7 +20,7 @@ To prevent this kind of attack, we implemented the following pipeline: we genera
 
 ## Detailed description
 
-This work was performed as a Master's Thesis, which represented the last milestone for completing the Master's Degree in Neuroengineering at the Technical University of Munich (TUM). It was conducted from October 2019 to May 2020 within the Department of Electrical and Computer Engineering, under the supervision of Univ.-Prof. Dr.-Ing. Bernhard U. Seeber (Chair of Audio Information Processing) and Dipl.-Ing.(Univ.) Ludwig Kürzinger (Chair of Human-Machine Communication). __The work has only been submitted for publication to [_SPECOM 2020 Conference_](http://www.specom.nw.ru/2020/) and is currently under review.__
+This work was performed as a Master's Thesis and represents the last milestone for completing the Master's Degree in Neuroengineering at the Technical University of Munich (TUM). It was conducted from October 2019 to May 2020 within the Department of Electrical and Computer Engineering, under the supervision of Univ.-Prof. Dr.-Ing. Bernhard U. Seeber (Chair of Audio Information Processing) and Dipl.-Ing.(Univ.) Ludwig Kürzinger (Chair of Human-Machine Communication). __The work has only been submitted for publication to [_SPECOM 2020 Conference_](http://www.specom.nw.ru/2020/) and is currently under review.__
 
 **Motivation & goal**
 
