@@ -1,0 +1,36 @@
+#Following architecture is inspired by Zhu&Cheng's 2020 Paper
+
+# network architecture
+# encoder related
+etype: vggblstmp     # encoder architecture type
+elayers: 4
+eunits: 320 # IA: was 512
+eprojs: 320 # IA: was 512
+subsample: "1_2_2_1_1" # skip every n frame from input to nth layers (IA. the pyramid BLSTM)
+
+# decoder related
+dlayers: 1
+dunits: 300 # IA: was 512
+
+# attention related
+atype: location
+adim: 300 # IA: was 512
+aconv-chans: 10
+aconv-filts: 100
+
+# hybrid CTC/attentions
+mtlalpha: 0.3 #IA: initially 0, then 0.1, 0.4, 0.5
+
+# minibatch related
+batch-size: 35 # IA: original was 35, tried also with 25 to avout CUDA out of memory runtime error
+maxlen-in: 600  # if input length  > maxlen_in, batchsize is automatically reduced
+maxlen-out: 150 # if output length > maxlen_out, batchsize is automatically reduced
+
+# optimization related
+sortagrad: 0 # Feed samples from shortest to longest ; -1: enabled for all epochs, 0: disabled, other: enabled for 'other' epochs
+opt: adadelta
+epochs: 25 # IA: was 20 (sometimes also tested with 15)
+patience: 3 ###### IA: what does this mean???
+
+# scheduled sampling option (IA: sample from softmax output of previous predictions -> reduces mismatch between train and test)
+sampling-probability: 0.5 # IA: initially 0, then 0.1
