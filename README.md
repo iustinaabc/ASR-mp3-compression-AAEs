@@ -22,7 +22,7 @@ To prevent this kind of attack, we implemented the following pipeline: we genera
 
 This work was performed as a Master's Thesis and represents the last milestone for completing the Master's Degree in Neuroengineering at the Technical University of Munich (TUM). It was conducted from October 2019 to May 2020 within the Department of Electrical and Computer Engineering, under the supervision of Univ.-Prof. Dr.-Ing. Bernhard U. Seeber (Chair of Audio Information Processing) and Dipl.-Ing.(Univ.) Ludwig Kürzinger (Chair of Human-Machine Communication). 
 
-__This work will be published at [_SPECOM 2020_](http://www.specom.nw.ru/2020/).__ It is also available as an [__arXiv preprint__](https://arxiv.org/abs/2007.12892).
+This work will be published at [_SPECOM 2020_](http://www.specom.nw.ru/2020/). It is also available as an [__arXiv preprint__](https://arxiv.org/abs/2007.12892).
 
 **Motivation & goal**
 
