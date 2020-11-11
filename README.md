@@ -22,7 +22,6 @@ To prevent this kind of attack, we implemented the following pipeline: we genera
 
 This work was performed as a Master's Thesis and represents the last milestone for completing the Master's Degree in Neuroengineering at the Technical University of Munich (TUM). It was conducted from October 2019 to May 2020 within the Department of Electrical and Computer Engineering, under the supervision of Univ.-Prof. Dr.-Ing. Bernhard U. Seeber (Chair of Audio Information Processing) and Dipl.-Ing.(Univ.) Ludwig Kürzinger (Chair of Human-Machine Communication). 
 
-This work will be published at [_SPECOM 2020_](http://www.specom.nw.ru/2020/). It is also available as an [__arXiv preprint__](https://arxiv.org/abs/2007.12892).
 
 **Motivation & goal**
 
@@ -44,4 +43,28 @@ presented at the system's input.
 **Preliminary Poster**
 ![Poster](/Poster_FINAL_18.05.2020.png)
 
+# Reference
 
+This work was published at _SPECOM 2020_ at https://doi.org/10.1007/978-3-030-60276-5_3 and can also be found in the [__arXiv preprint__](https://arxiv.org/abs/2007.12892). To cite this work:
+
+```
+@InProceedings{10.1007/978-3-030-60276-5_3,
+author="Andronic, Iustina
+and K{\"u}rzinger, Ludwig
+and Chavez Rosas, Edgar Ricardo
+and Rigoll, Gerhard
+and Seeber, Bernhard U.",
+editor="Karpov, Alexey
+and Potapova, Rodmonga",
+title="MP3 Compression to Diminish Adversarial Noise in End-to-End Speech Recognition",
+booktitle="Speech and Computer",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="22--34",
+abstract="Audio Adversarial Examples (AAE) represent purposefully designed inputs meant to trick Automatic Speech Recognition (ASR) systems into misclassification. The present work proposes MP3 compression as a means to decrease the impact of Adversarial Noise (AN) in audio samples transcribed by ASR systems. To this end, we generated AAEs with a new variant of the Fast Gradient Sign Method for an end-to-end, hybrid CTC-attention ASR system. The MP3's effectiveness against AN is then validated by two objective indicators: (1) Character Error Rates (CER) that measure the speech decoding performance of four ASR models trained on different audio formats (both uncompressed and MP3-compressed) and (2) Signal-to-Noise Ratio (SNR) estimated for uncompressed and MP3-compressed AAEs that are reconstructed in the time domain by feature inversion. We found that MP3 compression applied to AAEs indeed reduces the CER when compared to uncompressed AAEs. Moreover, feature-inverted (reconstructed) AAEs had significantly higher SNRs after MP3 compression, indicating that AN was reduced. In contrast to AN, MP3 compression applied to utterances augmented with regular noise resulted in more transcription errors, giving further evidence that MP3 encoding is effective in diminishing AN exclusively.",
+isbn="978-3-030-60276-5"
+}
+```
+
+The method to generate audio adversarial examples that was used in this work is described at https://doi.org/10.1007/978-3-030-60276-5_26.
